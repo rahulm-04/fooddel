@@ -12,9 +12,9 @@ const Navbar = ({setShowLogin}) => {
 
   return (
     <div className='navbar'>
-        <Link to="/"><img className='logo' src={assets.logo} alt=""/></Link>
+        <Link to="/fooddel/"><img className='logo' src={assets.logo} alt=""/></Link>
         <ul className='navbar-menu'>
-            <Link to='/' onClick={()=>setMenu("Home")} className={menu==="Home"?"active":""}>Home</Link>
+            <Link to='/fooddel/' onClick={()=>setMenu("Home")} className={menu==="Home"?"active":""}>Home</Link>
             <a href='#explore-menu' onClick={()=>setMenu("Menu")} className={menu==="Menu"?"active":""}>Menu</a>
             <a href='#app-download' onClick={()=>setMenu("mobile-app")} className={menu==="mobile-app"?"active":""}>mobile-app</a>
             <a href='#footer' onClick={()=>setMenu("Contact us")} className={menu==="Contact us"?"active":""}>Contact us</a>
